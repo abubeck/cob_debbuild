@@ -29,7 +29,7 @@ for repo in debbuild_config:
 repository = repo #"https://github.com/ipa320/bride-develop-release.git"
 #package = [["groovy","bride","0.3.0-6"], ["groovy","bride-templates", "0.3.0-6"] , ["groovy","bride-compilers", "0.3.0-6"],["hydro","bride","0.3.0-1"], ["hydro","bride-templates", "0.3.0-1"] , ["hydro","bride-compilers", "0.3.0-1"]]
 
-working_dir = "/home/aub/git/cob_debbuild/debcreation/"
+working_dir = "/home/vagrant/cob_debbuild/debcreation/"
 
 def build_debs():
 	#Create workspace
@@ -102,7 +102,7 @@ ask-passphrase
 	#f.write(dput_conf)
 
 if __name__ == '__main__':
-	#build_debs()
-	create_debrepo()
+	build_debs()
+	#create_debrepo()
 
 
